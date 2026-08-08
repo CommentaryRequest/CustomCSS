@@ -1,0 +1,534 @@
+/* Custom dark theme */
+body {
+    --grey-0: #ffffff; /* hsluv(0, 0, 100.0) */
+    --grey-1: #dfdfdf; /* hsluv(0, 0, 88.88888888888889) */
+    --grey-2: #c0c0c0; /* hsluv(0, 0, 77.77777777777777) */
+    --grey-3: #a2a2a2; /* hsluv(0, 0, 66.66666666666666) */
+    --grey-4: #858585; /* hsluv(0, 0, 55.55555555555556) */
+    --grey-5: #696969; /* hsluv(0, 0, 44.44444444444444) */
+    --grey-6: #4e4e4e; /* hsluv(0, 0, 33.33333333333333) */
+    --grey-7: #353535; /* hsluv(0, 0, 22.22222222222222) */
+    --grey-8: #1e1e1e; /* hsluv(0, 0, 11.11111111111111) */
+    --grey-9: #121212; /* hsluv(0, 0, 0.0) */
+    --red-0: #fff4f4; /* hsluv(12, 100, 97.0) */
+    --red-1: #ffe1e1; /* hsluv(12, 100, 92.0) */
+    --red-2: #ffc3c3; /* hsluv(12, 100, 84.0) */
+    --red-3: #ff8a8b; /* hsluv(12, 100, 70.5) */
+    --red-4: #ff5a5b; /* hsluv(12, 100, 61.0) */
+    --red-5: #f50007; /* hsluv(12, 100, 51.2) */
+    --red-6: #c00004; /* hsluv(12, 100, 40.0) */
+    --red-7: #8a0002; /* hsluv(12, 100, 28.0) */
+    --red-8: #650001; /* hsluv(12, 100, 19.0) */
+    --red-9: #490001; /* hsluv(12, 100, 12.0) */
+    --orange-0: #fff4f0; /* hsluv(37, 100, 97.0) */
+    --orange-1: #ffe2d5; /* hsluv(37, 100, 92.0) */
+    --orange-2: #ffc5a5; /* hsluv(37, 100, 84.0) */
+    --orange-3: #fd9200; /* hsluv(37, 100, 70.5) */
+    --orange-4: #d97c00; /* hsluv(37, 100, 61.0) */
+    --orange-5: #b56700; /* hsluv(37, 100, 51.2) */
+    --orange-6: #8d4f00; /* hsluv(37, 100, 40.0) */
+    --orange-7: #653700; /* hsluv(37, 100, 28.0) */
+    --orange-8: #482500; /* hsluv(37, 100, 19.0) */
+    --orange-9: #331900; /* hsluv(37, 100, 12.0) */
+    --yellow-0: #fff6e1; /* hsluv(68, 100, 97.0) */
+    --yellow-1: #ffe6a6; /* hsluv(68, 100, 92.0) */
+    --yellow-2: #f7ce00; /* hsluv(68, 100, 84.0) */
+    --yellow-3: #ccaa00; /* hsluv(68, 100, 70.5) */
+    --yellow-4: #ae9100; /* hsluv(68, 100, 61.0) */
+    --yellow-5: #917800; /* hsluv(68, 100, 51.2) */
+    --yellow-6: #705d00; /* hsluv(68, 100, 40.0) */
+    --yellow-7: #504100; /* hsluv(68, 100, 28.0) */
+    --yellow-8: #382d00 /* hsluv(68, 100, 19.0) */
+    --yellow-9: #271f00; /* hsluv(68, 100, 12.0) */
+    --green-0: #deffe0; /* hsluv(130, 100, 97.0) */
+    --green-1: #97ffa0; /* hsluv(130, 100, 92.0) */
+    --green-2: #00f242; /* hsluv(130, 100, 84.0) */
+    --green-3: #00c835; /* hsluv(130, 100, 70.5) */
+    --green-4: #00ab2c; /* hsluv(130, 100, 61.0) */
+    --green-5: #008e23; /* hsluv(130, 100, 51.2) */
+    --green-6: #006e19; /* hsluv(130, 100, 40.0) */ 
+    --green-7: #004e0f; /* hsluv(130, 100, 28.0) */
+    --green-8: #003708; /* hsluv(130, 100, 19.0) */
+    --green-9: #002604; /* hsluv(130, 100, 12.0) */
+    --azure-0: #f1f7ff; /* hsluv(242, 100, 97.0) */
+    --azure-1: #d9eaff; /* hsluv(242, 100, 92.0) */
+    --azure-2: #afd5ff; /* hsluv(242, 100, 84.0) */
+    --azure-3: #4bb4ff; /* hsluv(242, 100, 70.5) */
+    --azure-4: #009be6; /* hsluv(242, 100, 61.0) */
+    --azure-5: #0081c0; /* hsluv(242, 100, 51.2) */
+    --azure-6: #006496; /* hsluv(242, 100, 40.0) */
+    --azure-7: #00466b; /* hsluv(242, 100, 28.0) */
+    --azure-8: #00314d; /* hsluv(242, 100, 19.0) */
+    --azure-9: #002237; /* hsluv(242, 100, 12.0) */
+    --blue-0: #f4f6ff; /* hsluv(257, 100, 97.0) */
+    --blue-1: #e1e8ff; /* hsluv(257, 100, 92.0) */
+    --blue-2: #c3d0ff; /* hsluv(257, 100, 84.0) */
+    --blue-3: #8caaff; /* hsluv(257, 100, 70.5) */
+    --blue-4: #5d8fff; /* hsluv(257, 100, 61.0) */
+    --blue-5: #0075f8; /* hsluv(257, 100, 51.2) */
+    --blue-6: #005ac3; /* hsluv(257, 100, 40.0) */
+    --blue-7: #003f8d; /* hsluv(257, 100, 28.0) */
+    --blue-8: #002c66; /* hsluv(257, 100, 19.0) */
+    --blue-9: #001e4a; /* hsluv(257, 100, 12.0) */
+    --purple-0: #f9f5ff; /* hsluv(282, 100, 97.0) */
+    --purple-1: #eee3ff; /* hsluv(282, 100, 92.0) */
+    --purple-2: #dfc8ff; /* hsluv(282, 100, 84.0) */
+    --purple-3: #c797ff; /* hsluv(282, 100, 70.5) */
+    --purple-4: #b871ff; /* hsluv(282, 100, 61.0) */
+    --purple-5: #ab3fff; /* hsluv(282, 100, 51.2) */
+    --purple-6: #9000df; /* hsluv(282, 100, 40.0) */
+    --purple-7: #6700a1; /* hsluv(282, 100, 28.0) */
+    --purple-8: #4a0076; /* hsluv(282, 100, 19.0) */
+    --purple-9: #340056; /* hsluv(282, 100, 12.0) */
+    --magenta-0: #fff3ff; /* hsluv(307, 100, 97.0) */
+    --magenta-1: #fedeff; /* hsluv(307, 100, 92.0) */
+    --magenta-2: #febcff; /* hsluv(307, 100, 84.0) */
+    --magenta-3: #fd78ff; /* hsluv(307, 100, 70.5) */
+    --magenta-4: #fd23ff; /* hsluv(307, 100, 61.0) */
+    --magenta-5: #d700d9; /* hsluv(307, 100, 51.2) */
+    --magenta-6: #a800aa; /* hsluv(307, 100, 40.0) */
+    --magenta-7: #79007a; /* hsluv(307, 100, 28.0) */
+    --magenta-8: #570058; /* hsluv(307, 100, 19.0) */
+    --magenta-9: #3f003f; /* hsluv(307, 100, 12.0) */
+
+    --dtext-spoiler-background-color: var(--grey-5);
+}
+
+/* Rounded corners on thumbnails */
+.post-preview-image, .media-asset-preview-image {
+    border-radius: 5px;
+}
+
+/* Enable the ai-tags column on post upload and edit */
+.ai-tags-related-tags-column.hidden {
+    display: initial !important;
+}
+
+/* Show a checkerboard pattern behind transparent images */
+#image, .media-asset-image {
+    --checkerboard: repeating-conic-gradient(transparent 0% 25%, #77789244 0% 50%) 0 0 / 32px 32px;
+    background: var(--checkerboard);
+}
+
+/* Show a darker/lighter checkerboard behind the image on hover, depending on light/dark theme. */
+body[data-current-user-theme="light"] #image:hover,
+body[data-current-user-theme="light"] .media-asset-image:hover {
+    background: var(--checkerboard), var(--grey-9);
+}
+body[data-current-user-theme="dark"] #image:hover,
+body[data-current-user-theme="dark"] .media-asset-image:hover {
+    background: var(--checkerboard), var(--white);
+}
+@media (prefers-color-scheme: dark) {
+    #image:hover, .media-asset-image:hover {
+        background: var(--checkerboard), var(--white);
+    }
+}
+
+/* Hide the top danbooru logo and name */
+#app-name { display: none }
+
+/* highlight deprecated tags in the tag list */
+[data-is-deprecated='true'] a, a[data-is-deprecated='true'] {
+  color: var(--low-post-count-color) !important;
+}
+
+/* Show banned users with strikethrough */
+.user-banned {
+    text-decoration:line-through;
+}
+
+@keyframes rainbowText {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+/* Recolor admin usernames to rainbow */
+a.user-owner, a.user-admin {
+  background-image: linear-gradient(to left, red, violet, indigo, skyblue, green, yellow, orange, red);
+  background-size: 400% 100%; /* Larger background for movement */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent !important;
+  animation: rainbowText 6s ease infinite alternate;
+}
+
+a.user-approver {
+  color: #ff99f1 !important;
+}
+
+a.user-builder {
+  color: #e32dc5 !important;
+}
+
+/* Screen-wide search bar adapted from BrokenEagle */
+@media screen and (min-width: 661px){
+    /* Position the main side bar down and make it relative to allow absolute positioning. */
+    #c-posts #sidebar {
+        margin-top: 2.5em;
+        position: relative;
+    }
+    /* Push the content area down so that it doesn't overlap with the search bar. */
+    #c-posts #content {
+        margin-top: 2.5em;
+    }
+    /* Move the search box down. */
+    #c-posts #search-box {
+        position: absolute;
+        top: -2.5em;
+    }
+    /* Hide search header */
+    #c-posts #search-box h2 {
+        display: none;
+    }
+    /* Screen-wide search bar */
+    #c-posts #search-box-form,
+    #c-posts #tags {
+        width: 95vw;
+    }
+}
+
+/* Highlight private favgroups */
+[data-is-public='false'] tr, tr[data-is-public='false'] {
+  .name-column::before { content: "private"; color: red; display: inline-block; };
+}
+
+/* and public ones too */
+[data-is-public='true'] tr, tr[data-is-public='true'] {
+  .name-column::before { content: "public"; color: green; display: inline block; };
+}
+
+/* Keep mode menu on screen when scrolling */
+#mode-box {
+  position: sticky;
+  top: 0;
+  background: var(--body-background-color);
+  z-index: 1;
+}
+
+/* Make the "Add" button on the ai_tags page larger */
+.c-ai-tags article button {
+  height: 50px;
+  width: 100%;
+}
+
+/* Flat tag list */
+h3.artist-tag-list, h3.copyright-tag-list, h3.character-tag-list, h3.general-tag-list, h3.meta-tag-list {
+  display: none;
+}
+ul.artist-tag-list, ul.copyright-tag-list, ul.character-tag-list, ul.general-tag-list, ul.meta-tag-list {
+  margin-bottom: 0px
+}
+
+#main-menu a.forum-updated {
+    text-decoration:underline !important;
+}
+
+/* Reduce height between thumbnail blocks on profile pages */
+div#c-users div#a-show div.box { margin-bottom: 0em; }
+
+/* Changes differeence list in post tag history to + for added tags and - for removed tags */
+.diff-list > del {
+  text-decoration: none !important;
+}
+
+.diff-list > del > a:before {
+  content: "-";
+}
+
+.diff-list > ins > a:before {
+  content: "+";
+}
+
+.comment[data-is-deleted='true'] {
+  display: none !important;
+}
+
+/* Sticky mode box on mobile */
+@media (max-width: 768px) {
+  #mode-box {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0;
+    background: white; /* optional: so it's visible */
+    z-index: 9999;
+    padding: 0.2em 0.5em;
+    font-size: inherit;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  }
+
+  #mode-box h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  #mode-box form,
+  #mode-box select,
+  #tag-script-field {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  #search-box {
+    position: fixed;
+    bottom: 4.3em;
+    max-height: 0vh;
+    width: 100%;
+  }
+}
+
+del, del a {
+  text-decoration: none !important;
+}
+
+/* flagged post borders */
+body[data-current-user-is-approver=false] .post-preview.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-flagged-color);
+}
+body[data-current-user-is-approver=false] .post-preview.post-status-has-children.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-children-color);
+}
+body[data-current-user-is-approver=false] .post-preview.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color);
+}
+body[data-current-user-is-approver=false] .post-preview.post-status-has-children.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color);
+}
+body[data-post-is-flagged=true] .post-notice-pending {
+  background: var(--post-deleted-notice-background) !important; 
+}
+
+/* literally unusable without this */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Show banned status on post previews */
+article[data-flags*="banned"] .post-preview-link:before {
+  content: "BANNED";
+  color: var(--preview-icon-color);
+  background: rgba(192 0 4 / 70%); /* --red-6 */
+  position: absolute;
+  bottom: .125rem;
+  right: .125rem;
+  padding: .125rem;
+  margin: .125rem;
+  border-radius: .25rem;
+  line-height: 1;
+  font-size: var(--text-xs);
+  font-weight: bold;
+  font-family: var(--arial-font);
+}
+
+/* visually change thumbnails when clicking them */
+.post-preview-link:active picture img {
+  filter: sepia(1);
+}
+
+/* Make arttags bigger for no readon */
+.tag-type-1 {
+  font-size: 1.2em;
+}
+
+.tag-type-5[data-tag-name*="res"] a {
+  color: grey;
+}
+.tag-type-5[data-tag-name*="res"] {
+  font-size: 0.9em;
+}
+
+.post-count {
+  font-size: 0.7em;
+}
+
+#add-to-favgroup-dialog div {
+  padding-bottom: 0.5em;
+}
+
+body[data-mode-menu="edit"] { --post-mode-menu-active-post-outline-color: var(--azure-2) }
+body[data-mode-menu="tag-script"] { --post-mode-menu-active-post-outline-color: #ffff00 }
+body[data-mode-menu="add-fav"] { --post-mode-menu-active-post-outline-color: var(--magenta-3) }
+body[data-mode-menu="remove-fav"] { --post-mode-menu-active-post-outline-color: var(--red-3) }
+
+/* 😭 */
+.tag-type-0[data-tag-name="loli"], .tag-type-0[data-tag-name="loli"] a, .tag-type-0[data-tag-name="toddlercon"], .tag-type-0[data-tag-name="toddlercon"] a {
+  color: pink !important;
+}
+
+/* brown like poopoo because it is */
+.tag-type-0[data-tag-name="scat"], .tag-type-0[data-tag-name="scat"] a {
+  color: #7d4f00 !important;
+}
+
+/* Enable colored thumbnail borders on mobile */
+.post-preview .post-preview-image {
+  border: 2px solid transparent !important;
+}
+.post-preview.post-status-has-children .post-preview-image {
+  border-color: var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-has-parent .post-preview-image {
+  border-color: var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-has-children.post-status-has-parent .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-has-parent-color) var(--preview-has-parent-color) var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-deleted .post-preview-image {
+  border-color: var(--preview-deleted-color) !important;
+}
+.post-preview.post-status-has-children.post-status-deleted .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-deleted-color) var(--preview-deleted-color) var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-has-parent.post-status-deleted .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-deleted-color) var(--preview-deleted-color) var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-has-children.post-status-has-parent.post-status-deleted .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-deleted-color) var(--preview-deleted-color) var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-pending-color) !important;
+}
+.post-preview.post-status-has-children.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-has-children.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-pending-color) var(--preview-pending-color) var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-has-parent.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-pending-color) var(--preview-pending-color) var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-has-children.post-status-has-parent.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-has-children.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-pending-color) var(--preview-pending-color) var(--preview-has-parent-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-flagged .post-preview-image {
+  border-color: var(--preview-flagged-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-has-children.post-status-flagged .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-children-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-has-parent.post-status-flagged .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-has-children.post-status-has-parent.post-status-flagged .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color) !important;
+}
+
+/* Enable flagged posts to have red borders for non-approvers. */
+body[data-current-user-is-approver=false] .post-preview.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-flagged-color);
+}
+body[data-current-user-is-approver=false] .post-preview.post-status-has-children.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-children-color);
+}
+body[data-current-user-is-approver=false] .post-preview.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color);
+}
+body[data-current-user-is-approver=false] .post-preview.post-status-has-children.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color);
+}
+body[data-post-is-flagged=true] .post-notice-pending {
+  background: var(--post-deleted-notice-background) !important;
+}
+
+/* Enable colored thumbnail borders on mobile */
+.post-preview .post-preview-image {
+  border: 3px solid transparent !important;
+}
+.post-preview.post-status-has-children .post-preview-image {
+  border-color: var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-has-parent .post-preview-image {
+  border-color: var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-has-children.post-status-has-parent .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-has-parent-color) var(--preview-has-parent-color) var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-deleted .post-preview-image {
+  border-color: var(--preview-deleted-color) !important;
+}
+.post-preview.post-status-has-children.post-status-deleted .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-deleted-color) var(--preview-deleted-color) var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-has-parent.post-status-deleted .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-deleted-color) var(--preview-deleted-color) var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-has-children.post-status-has-parent.post-status-deleted .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-deleted-color) var(--preview-deleted-color) var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-pending-color) !important;
+}
+.post-preview.post-status-has-children.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-has-children.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-pending-color) var(--preview-pending-color) var(--preview-has-children-color) !important;
+}
+.post-preview.post-status-has-parent.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-pending-color) var(--preview-pending-color) var(--preview-has-parent-color) !important;
+}
+.post-preview.post-status-has-children.post-status-has-parent.post-status-pending:not(.mod-queue-preview) .post-preview-image,
+.post-preview.post-status-has-children.post-status-has-parent.post-status-flagged:not(.mod-queue-preview) .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-pending-color) var(--preview-pending-color) var(--preview-has-parent-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-flagged .post-preview-image {
+  border-color: var(--preview-flagged-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-has-children.post-status-flagged .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-children-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-has-parent.post-status-flagged .post-preview-image {
+  border-color: var(--preview-has-parent-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color) !important;
+}
+body[data-current-user-is-approver="true"] .post-preview.post-status-has-children.post-status-has-parent.post-status-flagged .post-preview-image {
+  border-color: var(--preview-has-children-color) var(--preview-flagged-color) var(--preview-flagged-color) var(--preview-has-parent-color) !important;
+}
+
+/* bloat garbage useless */
+.user-email-address, #post-information h2, #post-options h2, #post-history h2, #mode-box h2, #tag-box h2, #dpi-post-statistics h2, #dpi-domain-statistics h2, #options-box h2, #related-box h2, .preview-size-menu .text-sm, #artist-commentary h2:nth-child(1), #post-option-add-to-favorites, #post-option-remove-from-favorites, a.tab:nth-child(5) {
+  display: none;
+}
+
+div.tab-panel:nth-child(1) > div:nth-child(2) > div:nth-child(1) > label:nth-child(1) {
+  color: var(--body-background-color);
+}
+
+#c-uploads #a-new .file-upload-component span.hint {
+  display: none;
+}
+
+.upload-warning-details {
+  display:none;
+}
+
+#post_tag_string {
+  font-family: mono;
+}
+
+/* Make the skip button wide on mobile */
+@media (max-width: 768px) {
+  .mod-queue-preview div.flex-col div.gap-1 a:nth-child(2) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+/* Make approve button green */
+.mod-queue-preview div.flex-col div.gap-1 a:nth-child(1).button-primary {
+  background-color: var(--green-4);
+}
+
+.mod-queue-preview div.flex-col div.gap-1 a:nth-child(1).button-primary:hover {
+  background-color: var(--green-3);
+}
