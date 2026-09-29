@@ -161,8 +161,16 @@ a.user-approver {
   color: #ff99f1 !important;
 }
 
+a.user-approver:hover {
+  color: #ffc7f7 !important;
+}
+
 a.user-builder {
   color: #e32dc5 !important;
+}
+
+a.user-builder:hover {
+  color: #ed58d5 !important;
 }
 
 /* Screen-wide search bar adapted from BrokenEagle */
