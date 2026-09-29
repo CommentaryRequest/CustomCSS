@@ -574,3 +574,30 @@ a[href="/users/829456"]::after {
     content: " 🎰";
     font-size: 0.9em;
 }
+
+/* Poop role */
+a[href="/users/1298178"], a[href="/users/454670"] {
+    color: rgb(122, 91, 87);
+    text-decoration: none;
+}
+
+a[href="/users/1298178"]::after, a[href="/users/454670"]::after {
+    content: " 💩";
+}
+
+/* Make the new badge on forum topics fade-in blink */
+@keyframes fadeBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.topic-status.new {
+  animation: fadeBlink 2s infinite ease-in-out;
+}
