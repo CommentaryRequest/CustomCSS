@@ -148,7 +148,7 @@ body[data-current-user-theme="dark"] .media-asset-image:hover {
 }
 
 /* Recolor admin usernames to rainbow */
-a.user-owner, a.user-admin {
+a.user-superadmin, a.user-admin {
   background-image: linear-gradient(to left, red, violet, indigo, skyblue, green, yellow, orange, red);
   background-size: 400% 100%; /* Larger background for movement */
   -webkit-background-clip: text;
@@ -608,4 +608,21 @@ a[href="/users/1298178"]::after, a[href="/users/454670"]::after {
 
 .topic-status.new {
   animation: fadeBlink 2s infinite ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .post-upvote-link {
+    transform: scale(3);
+    margin-right: 1rem;
+  }
+
+  .post-downvote-link {
+    transform: scale(3);
+    margin-left: 1rem;
+  }
+}
+
+#main-menu > a,
+#subnav-menu > a {
+  padding: 2px 8px !important;
 }
